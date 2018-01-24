@@ -1,0 +1,37 @@
+import React from 'react';
+
+export default class SearchHistory extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    render() {
+        const items = this.props.searchItems
+        return (
+            <div className="float-right w-50 pl-2">
+                <div className="card ">
+                    <h5 className="card-header ">Search History</h5>
+                    <div className="card-body">
+                    <table className="table table-striped">
+                    <tbody>
+                        {items
+                    .map(item => {
+                    return (
+                        <tr key={item.timestamp}>
+                        <td>{item.city}</td>
+                        <td>
+                            <p style={noMargin}>{item.date}</p>
+                            <p style={noMargin}>{item.time}</p>
+                        </td>
+                        </tr>
+                    );
+                    })
+                    .reverse()}
+                    </tbody>
+                  </table>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
