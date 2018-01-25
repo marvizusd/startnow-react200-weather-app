@@ -3,6 +3,8 @@ import CityReducer from './components/City/cityReducer';
 import CityInformationReducer from './components/CityInformation/cityInformationReducer';
 import SearchHistoryReducer from './components/SearchHistory/searchHistoryReducer';
 
+// the function below combines all the reducers from the other 
+// components so we can have access to the state of those components
 const rootReducer = combineReducers({
 // add reducers
     city: CityReducer,
@@ -11,4 +13,5 @@ const rootReducer = combineReducers({
     
 });
 
+// export the combined state of all our components
 export default rootReducer;

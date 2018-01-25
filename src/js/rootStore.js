@@ -7,5 +7,6 @@ const rootStore = createStore(
   rootReducer,
   composeEnhancers(applyMiddleware(promiseMiddleware()))
 );
-
+// this is going to export the store that we are going to wrap our
+//  App in so that all components in that store have access to state that was imported by the RootReducer
 export default rootStore;

@@ -14,6 +14,11 @@ export default class SearchHistory extends React.Component{
                     <div className="card-body">
                     <table className="table table-striped">
                     <tbody>
+                        {/* this.props.searchItems are all stored in a variable items. the map() 
+                        functions goes through the array of items and passes in data which we 
+                        labeled (item) in the parameters sections,
+                        create a new <tr> with a key of the item.timestamp
+                        and <td> with the item.city name */}
                         {items.
                         map((item) => {
                     return (

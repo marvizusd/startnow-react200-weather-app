@@ -6,7 +6,8 @@ import { addNewSearchItem } from "../SearchHistory/searchHistoryActions"
 export default class City extends React.Component {
     constructor(props) {
         super(props);
-
+// these binds are required anytime we are creating handle functions below
+// format this.handle = this.handle.bind(this)
         this.handleClick = this.handleClick.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleCityToggle = this.handleCityToggle.bind(this);
