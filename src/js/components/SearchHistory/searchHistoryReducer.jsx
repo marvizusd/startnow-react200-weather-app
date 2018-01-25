@@ -29,7 +29,7 @@ export default function SearchHistoryReducer(state = defaultState, action){
     var time = hr + ":" + min + ":" + sec;
 
     switch (type) {
-        case types.ADD_NEW_SSEARCH_ITEM: {
+        case types.ADD_NEW_SEARCH_ITEM: {
             if ( state.searchItems.length > 3) {
                 return {
                     searchItems: [

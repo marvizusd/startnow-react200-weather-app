@@ -14,19 +14,18 @@ export default class SearchHistory extends React.Component{
                     <div className="card-body">
                     <table className="table table-striped">
                     <tbody>
-                        {items
-                    .map(item => {
+                        {items.
+                        map((item) => {
                     return (
                         <tr key={item.timestamp}>
                         <td>{item.city}</td>
                         <td>
-                            <p style={noMargin}>{item.date}</p>
-                            <p style={noMargin}>{item.time}</p>
+                            <p>{item.date}</p>
+                            <p>{item.time}</p>
                         </td>
                         </tr>
                     );
-                    })
-                    .reverse()}
+                    })}
                     </tbody>
                   </table>
                     </div>

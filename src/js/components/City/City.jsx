@@ -25,7 +25,7 @@ export default class City extends React.Component {
     handleCityToggle(event) {
         const {dispatch} = this.props;
         dispatch(getWeather(event.target.value));
-        // dispatch(addNewSearch(event.target.value));
+        dispatch(addNewSearchItem(event.target.value));
     }
 
     render() {
