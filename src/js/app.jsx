@@ -4,6 +4,9 @@ import CityInformation from './components/CityInformation';
 import SearchHistory from './components/SearchHistory';
 
 export default class App extends React.Component {
+  constructor(props){
+    super(props)
+  }
   render() {
     return (
       <div className='container'>

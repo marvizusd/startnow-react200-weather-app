@@ -1,7 +1,8 @@
 import { types } from "./searchHistoryActions";
 
 const defaultState = {
-    searchItems: []
+    searchItems: [],
+    test:"SEARCHTEST"
 };
 
 export default function SearchHistoryReducer(state = defaultState, action){

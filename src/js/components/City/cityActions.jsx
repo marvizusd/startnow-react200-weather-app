@@ -6,6 +6,7 @@ export const types = {
     GET_FORECAST: "GET_FORECAST"
 };
 
+// this can also read as getWeather(selectedCity) as it was dispatched from City.jsx file
 export function getWeather(city) {
     return {
         type: types.GET_WEATHER,

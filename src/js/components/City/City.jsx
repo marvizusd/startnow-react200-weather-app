@@ -14,6 +14,8 @@ export default class City extends React.Component {
 
     handleClick(event) {
         const {dispatch, selectedCity} = this.props;
+        // below is dispatches these functions and they need to match up to function actions designated in the action file,
+        //  brings data with is example here 'selectedCity'
         dispatch(getWeather(selectedCity));
         dispatch(addNewSearchItem(selectedCity));
     }
@@ -30,6 +32,7 @@ export default class City extends React.Component {
 
     render() {
         const selectedCity = this.props.selectedCity;
+        // console.log(selectedCity)
         return(
             <div>
                 <div className="btn-group" role="group" aria-label="Basic example">

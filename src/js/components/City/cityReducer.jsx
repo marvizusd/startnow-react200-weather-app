@@ -23,7 +23,7 @@ export default function CityReducer(state = defaultState, action) {
     switch (type) {
         case types.GET_WEATHER + "_FULFILLED": {
             if (payload) {
-                console.log(payload, type)
+                // console.log(payload, type)
                 return {
                     ...state,
                     temperature: payload.main.temp,
